@@ -125,43 +125,6 @@
             </objects>
             <point key="canvasLocation" x="2869" y="-2091"/>
         </scene>
-        <!--Table View Controller - Музыка-->
-        <scene sceneID="Pdk-qs-7i2">
-            <objects>
-                <tableViewController id="L6X-2B-4Ww" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="72r-RM-XCn">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sKv-dv-bcb">
-                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sKv-dv-bcb" id="42c-sg-kN8">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-fu-sTq">
-                                            <rect key="frame" x="123" y="11" width="287" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="L6X-2B-4Ww" id="3uR-2x-ZPo"/>
-                            <outlet property="delegate" destination="L6X-2B-4Ww" id="gjA-wW-zUq"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Музыка" id="LNh-AX-n34"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FEt-4G-DMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2886" y="398"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Az3-R1-hwm">
             <objects>
@@ -170,41 +133,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="L6X-2B-4Ww" kind="relationship" relationship="rootViewController" id="ocL-AH-0M9"/>
+                        <segue destination="N7M-7Z-xUh" kind="relationship" relationship="rootViewController" id="rBW-4H-S8t"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxn-tr-YAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1902" y="398"/>
         </scene>
-        <!--Table View Controller - Сплетни-->
-        <scene sceneID="n49-Wh-Ijf">
+        <!--Music View Controller-->
+        <scene sceneID="TmN-nn-bXE">
             <objects>
-                <tableViewController id="GGT-ok-JgF" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aQF-1p-FAu">
+                <viewController id="N7M-7Z-xUh" customClass="IVMusicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cpj-bj-Pcf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZdA-SH-9jm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XpC-SR-iLV">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Se4-N8-Zll">
-                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Se4-N8-Zll" id="fOi-LG-VaS">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="GGT-ok-JgF" id="xVk-gg-tat"/>
-                            <outlet property="delegate" destination="GGT-ok-JgF" id="hfP-dg-fKi"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Сплетни" id="RrD-U4-XoI"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bd7-Zm-VhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v6K-ub-4Vg">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="dxT-5s-rdA">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="N7M-7Z-xUh" id="may-kX-dOP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7m-Ie-FNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2874" y="1784"/>
+            <point key="canvasLocation" x="2949" y="392"/>
         </scene>
         <!--Table View Controller - Поиск-->
         <scene sceneID="7sc-4u-Sq3">
@@ -258,41 +217,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="GGT-ok-JgF" kind="relationship" relationship="rootViewController" id="8jW-UI-m6r"/>
+                        <segue destination="nE1-W4-EWJ" kind="relationship" relationship="rootViewController" id="1qs-hi-tSU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8x-hz-YgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1894" y="1784"/>
         </scene>
-        <!--Table View Controller - Видео-->
-        <scene sceneID="tqV-Vq-tp8">
+        <!--News View Controller - Новости-->
+        <scene sceneID="iYb-7v-fvI">
             <objects>
-                <tableViewController id="Zoh-qZ-VxB" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sbx-cC-nWu">
+                <viewController id="nE1-W4-EWJ" customClass="IVNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0z-PK-k8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="wwq-A7-gbh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vJ9-5S-zEJ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TET-IO-SEk">
-                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TET-IO-SEk" id="PBg-GP-nJB">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Zoh-qZ-VxB" id="NJQ-ZX-B96"/>
-                            <outlet property="delegate" destination="Zoh-qZ-VxB" id="2Kx-bB-WF2"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Видео" id="Dqj-m8-6SK"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vUt-Qs-8CW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новости" id="H7D-MO-27X">
+                        <barButtonItem key="leftBarButtonItem" title="Меню" id="gp7-fB-V4b">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="nE1-W4-EWJ" id="gfv-yH-oT6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSR-IF-WWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2946" y="-840"/>
+            <point key="canvasLocation" x="2909" y="1788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VgI-i9-Khy">
@@ -302,12 +257,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Zoh-qZ-VxB" kind="relationship" relationship="rootViewController" id="RWO-Gj-150"/>
+                        <segue destination="K6b-wp-OtK" kind="relationship" relationship="rootViewController" id="6zN-zP-yHp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkl-sX-FZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1934" y="-840"/>
+        </scene>
+        <!--Video View Controller - Видео-->
+        <scene sceneID="GVS-7l-73Q">
+            <objects>
+                <viewController id="K6b-wp-OtK" customClass="IVVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bgq-25-hIE"/>
+                        <viewControllerLayoutGuide type="bottom" id="reX-vV-bcF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x13-VY-PRh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Видео" id="hui-uh-0nv">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="K2v-ed-Bvo">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="K6b-wp-OtK" id="lzc-bv-jEX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94N-d4-8ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2897" y="-852"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

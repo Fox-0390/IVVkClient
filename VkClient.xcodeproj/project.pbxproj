@@ -27,6 +27,10 @@
 		E7B8884F1987B19400F7235A /* MEFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B8884E1987B19400F7235A /* MEFoldAnimationController.m */; };
 		E7B888521987B1A600F7235A /* MEZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B888511987B1A600F7235A /* MEZoomAnimationController.m */; };
 		E7B888551987B1AC00F7235A /* MEDynamicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B888541987B1AC00F7235A /* MEDynamicTransition.m */; };
+		E7C319D6199CE994001B6C19 /* IVFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C319D5199CE994001B6C19 /* IVFriendsViewController.m */; };
+		E7C319D9199CEA16001B6C19 /* IVMusicicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C319D8199CEA16001B6C19 /* IVMusicicViewController.m */; };
+		E7C319DC199CEBE4001B6C19 /* IVVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C319DB199CEBE4001B6C19 /* IVVideoViewController.m */; };
+		E7C319DF199CED55001B6C19 /* IVNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C319DE199CED55001B6C19 /* IVNewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,14 @@
 		E7B888511987B1A600F7235A /* MEZoomAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEZoomAnimationController.m; sourceTree = "<group>"; };
 		E7B888531987B1AC00F7235A /* MEDynamicTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDynamicTransition.h; sourceTree = "<group>"; };
 		E7B888541987B1AC00F7235A /* MEDynamicTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDynamicTransition.m; sourceTree = "<group>"; };
+		E7C319D4199CE994001B6C19 /* IVFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVFriendsViewController.h; sourceTree = "<group>"; };
+		E7C319D5199CE994001B6C19 /* IVFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVFriendsViewController.m; sourceTree = "<group>"; };
+		E7C319D7199CEA16001B6C19 /* IVMusicicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVMusicicViewController.h; sourceTree = "<group>"; };
+		E7C319D8199CEA16001B6C19 /* IVMusicicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVMusicicViewController.m; sourceTree = "<group>"; };
+		E7C319DA199CEBE4001B6C19 /* IVVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVideoViewController.h; sourceTree = "<group>"; };
+		E7C319DB199CEBE4001B6C19 /* IVVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVideoViewController.m; sourceTree = "<group>"; };
+		E7C319DD199CED55001B6C19 /* IVNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVNewsViewController.h; sourceTree = "<group>"; };
+		E7C319DE199CED55001B6C19 /* IVNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVNewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +200,14 @@
 				E7B888441987990A00F7235A /* IVMenuViewController.m */,
 				E7B8884619879FAF00F7235A /* IVMyPageViewController.h */,
 				E7B8884719879FAF00F7235A /* IVMyPageViewController.m */,
+				E7C319D4199CE994001B6C19 /* IVFriendsViewController.h */,
+				E7C319D5199CE994001B6C19 /* IVFriendsViewController.m */,
+				E7C319D7199CEA16001B6C19 /* IVMusicicViewController.h */,
+				E7C319D8199CEA16001B6C19 /* IVMusicicViewController.m */,
+				E7C319DA199CEBE4001B6C19 /* IVVideoViewController.h */,
+				E7C319DB199CEBE4001B6C19 /* IVVideoViewController.m */,
+				E7C319DD199CED55001B6C19 /* IVNewsViewController.h */,
+				E7C319DE199CED55001B6C19 /* IVNewsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -343,10 +363,14 @@
 				E7B8884F1987B19400F7235A /* MEFoldAnimationController.m in Sources */,
 				E7B888551987B1AC00F7235A /* MEDynamicTransition.m in Sources */,
 				E7B8884819879FAF00F7235A /* IVMyPageViewController.m in Sources */,
+				E7C319DF199CED55001B6C19 /* IVNewsViewController.m in Sources */,
 				E7B888521987B1A600F7235A /* MEZoomAnimationController.m in Sources */,
+				E7C319D9199CEA16001B6C19 /* IVMusicicViewController.m in Sources */,
 				E7B888451987990A00F7235A /* IVMenuViewController.m in Sources */,
+				E7C319DC199CEBE4001B6C19 /* IVVideoViewController.m in Sources */,
 				E7423078198629EF001B994A /* main.m in Sources */,
 				E742307C198629EF001B994A /* IVAppDelegate.m in Sources */,
+				E7C319D6199CE994001B6C19 /* IVFriendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
